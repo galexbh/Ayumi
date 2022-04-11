@@ -14,7 +14,7 @@ function main() {
     },
   });
 
-  window.loadFile(join(__dirname, './ui/index.html'));
+  window.loadFile(join(__dirname, './ui/login.html'));
   window.on('ready-to-show', window.show);
 
   if (isDev) window.webContents.openDevTools();
