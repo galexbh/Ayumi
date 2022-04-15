@@ -1,0 +1,61 @@
+
+.options-menu{
+    width:100vw;
+    height: 100vh;
+}
+body{
+    width:100vw;
+    height: 100vh;
+}
+.options-menu > div.level-item{
+    height: 100%;
+}
+.options-menu > div.level-item:first-child{
+    background-color: #03045E;
+    width: 15%; 
+    position: relative;
+    
+}
+.options-menu > div.level-item:last-child{
+    width:85%;
+    
+}
+
+.options-menu > div.level-item > aside.menu{
+position: absolute;
+top: 20px;
+width: 100%;
+
+}
+.selected-option{
+    background-color: #CAF0F8;
+}
+.options-menu > div.level-item > aside.menu > ul > li > a, .options-menu > div.level-item > aside.menu > p {
+    color: #ffffff;
+}
+
+
+.options-menu > div.level-item > aside.menu > ul > li:hover{
+ background-color: #ffffff;
+}
+.options-menu > div.level-item > aside.menu > ul > li:hover > a{
+    color: #03045E;
+
+}
+
+.options-menu > div.level-item > aside.menu > ul > li{
+    padding: 10px 10px 10px 45px;
+}
+.options-menu > div.level-item > aside.menu > p{
+    padding: 0 0 0 20px;
+}
+::-webkit-scrollbar {
+    display: none;
+    }
+
+
+
+.page-selected , .page-selected > iframe {
+    width: 100%; 
+    height:100%;
+}

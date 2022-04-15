@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-language/v1.0.0/mapbox-gl-language.js'></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+<link href="../styles/mapbox-gl.css" rel="stylesheet">
+<link href="../styles/Map.css" rel="stylesheet">    
+<title>Document</title>
+</head>
+<body style = "height:100vh;">
+<div id="map" style = "width: 100%; height:100%;"></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoic2F2ZTEyMSIsImEiOiJjbDFtbGdhbXQwMjl5M2dxb3NjZDZmY3RrIn0.eKtHCBrDiVBbk5mAgjY1sg';
+const map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11',
+center: [-88.9522704088879, 14.410196148121264],
+zoom: 12
+});
+
+const directions = new MapboxDirections({
+    accessToken: mapboxgl.accessToken,
+    unit: 'metric',
+    profile: 'mapbox/driving',
+    alternatives: false,
+    geometries: 'geojson',
+    language: 'es-MX',
+    controls: { instructions: false, inputs: false},
+    flyTo: false,
+    
+  });
+
+  
+  map.addControl(directions, 'bottom-left');
+  map.scrollZoom.enable();
+
+  const language = new MapboxLanguage();
+map.addControl(language);
+
+</script>
+</body>
+</html>

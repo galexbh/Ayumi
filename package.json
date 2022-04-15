@@ -2,7 +2,7 @@
   "name": "ayumi",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "src/main.js",
   "scripts": {
     "build": "electron-builder",
     "start": "electron ."
@@ -16,7 +16,7 @@
       "icon": "icon.ico"
     },
     "nsis": {
-      "oneClick": true,
+      "oneClick": false,
       "installerIcon": "icon.ico",
       "uninstallerIcon": "icon.ico",
       "uninstallDisplayName": "ayumi-uninstaller",
