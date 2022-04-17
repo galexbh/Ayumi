@@ -1,4 +1,4 @@
-.mapbox-directions-clearfix,.mapbox-directions-instructions{
+.mapbox-directions-clearfix{
    display: none;
 }
 
@@ -24,4 +24,23 @@ body {
     text-align:center;
     padding: 20px;
 }
+#use-route{
+height: 25%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 
+}
+#use-route > button{
+    background-color: #023E8A;
+    width: 30%;
+    color: #ffffff;
+}
+
+#use-route > button:hover{
+
+background-color: #ffffff;
+color: #000000;
+
+
+}

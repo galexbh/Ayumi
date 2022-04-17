@@ -5,11 +5,10 @@ const isDev = !app.isPackaged;
 
 const createWindow = () => {
   const win = new BrowserWindow({
-    width: 1200,
-    height: 960
+     height: 720, width: 1280
   })
   win.removeMenu(); 
-  win.loadFile(path.join(__dirname,'./ui/register.html'))
+  win.loadFile(path.join(__dirname,'./ui/login.html'))
   if (isDev) win.webContents.openDevTools();
 }
 

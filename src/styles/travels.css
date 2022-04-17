@@ -1,0 +1,16 @@
+::-webkit-scrollbar {
+    display: none;
+    }
+
+    #route-content{
+width: 60%;
+height: 90%;
+
+    }
+    #invoice-content {
+        overflow: auto;
+        width: 50%;
+        height: 90%;
+
+    }
+    .modal{text-align: center;}

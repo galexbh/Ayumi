@@ -7,18 +7,28 @@
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
 <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-language/v1.0.0/mapbox-gl-language.js'></script>
 <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+<link rel="stylesheet" href="../styles/directions.css" type="text/css">
+
 <link href="../styles/mapbox-gl.css" rel="stylesheet">
-<link href="../styles/Map.css" rel="stylesheet">    
+<link href="../styles/driverMap.css" rel="stylesheet">    
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 
 <title>Document</title>
 </head>
 <body style = "height:100vh;">
 <div id="map" style = "width: 100%; height:75%;"></div>
-<div id = "use-route">
-  <button class="button" id = "button-route">Usar esta ruta</button>  
-</div>
 
-<script src="../scripts/simpleMap.js"></script>
+<section class="section">
+    <h5 class="subtitle is-5">
+       Dirijase a la dirección del cliente marcada en el <strong>mapa.</strong></h5>
+        <h5 class="subtitle is-5">
+    <div class="container">
+            <h4 class="title is-4">Información general:</h4>
+    <h5 class="subtitle is-5">
+    Nombre del cliente: <span>Andy</span></h5>
+    <h5 class="subtitle is-5">
+        Telefono del cliente: <span>13412</span></h3>
+    </div>
+  </section><script src="../scripts/driverMap.js"></script>
 </body>
 </html>

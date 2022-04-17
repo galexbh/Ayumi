@@ -1,0 +1,16 @@
+#map { 
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; 
+    top: 0; 
+    bottom: 0;  
+    width: 80%;
+        height: 100%;
+    border-radius: 1rem; 
+}
+body{
+    height:100vh;
+}
+.mapboxgl-ctrl-directions{
+    height: 100%;
+}

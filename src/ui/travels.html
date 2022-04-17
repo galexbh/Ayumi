@@ -6,20 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3e54782578.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="../styles/travels.css">  
+
     <title>Document</title>
 </head>
 <body>
-    <div class="modal is-active" >
+    <div id = "route" class="modal" >
         <div class="modal-background"></div>
-        <div class="modal-card">
+        <div class="modal-card" id = "route-content">
           <header class="modal-card-head">
-            <p class="modal-card-title">Ruta tomada</p>
-            <button class="delete" aria-label="close"></button>
+            <p class="modal-card-title">Ruta</p>
+            <button id = "prueba" class="delete" aria-label="close"></button>
           </header>
           <section class="modal-card-body">
-              <iframe src="../ui/simpleMap.html" frameborder="0" style = "width: 100%; height:100%;"></iframe>
+              <iframe id = "simple-map" frameborder="0" style = "width: 100%; height:100%;"></iframe>
           </section>
          
+        </div>
+      </div>
+
+      <div id = "invoice" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card"id = "invoice-content">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Factura</p>
+            <button class="delete" aria-label="close"></button>
+          </header>
+          <section id = "final-invoice" class="modal-card-body">
+              adliafsadfsfdfklgkldfnglkdfn
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button is-success" id = "get-invoice">Descargar factura</button>
+            <button class="button" id ="close-invoice">Cancelar</button>
+          </footer>
         </div>
       </div>
 
@@ -34,26 +54,26 @@
         <table class="table is-fullwidth">
             <thead>
                 <tr>
-                  <th>Identificador</th>
-                  <th>Nombre del conductor</th>
-                  <th>Fecha</th>
-                  <th>Precio</th>
+                  <th id = "id">Identificador</th>
+                  <th id = "driverName" >Nombre del conductor</th>
+                  <th id = "date" >Fecha</th>
+                  <th id = "price">Precio</th>
 
-                  <th>Ruta tomada</th>
-                  <th>Factura</th>
+                  <th id = "route">Ruta</th>
+                  <th id = "invoice">Factura</th>
                 </tr>
               </thead>
 
               <tbody>
                 <tr>
                   <th>1</th>
-                  <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
+                  <td>Nombre chofer
                   </td>
                   <th>1</th>
                   <th>1</th>
 
-                  <td><button class="button">Ver ruta</button></td>
-                  <td><button class="button">Obtener factura</button></td>                  
+                  <td><button class="button open-route" >Ver ruta</button></td>
+                  <td><button class="button open-invoice">Obtener factura</button></td>                  
                 </tr>
                 <tr>
                     <th>1</th>
@@ -62,13 +82,65 @@
                     <th>1</th>
                     <th>1</th>
   
-                    <td><button class="button">Ver ruta</button></td>
-                    <td><button class="button">Obtener factura</button></td>                  
+                    <td><button class="button  open-route">Ver ruta</button></td>
+                    <td><button class="button open-invoice">Obtener factura</button></td>                  
                   </tr>
+                  <tr>
+                    <th>1</th>
+                    <td>Nombre chofer
+                    </td>
+                    <th>1</th>
+                    <th>1</th>
+  
+                    <td><button class="button open-route" >Ver ruta</button></td>
+                    <td><button class="button open-invoice">Obtener factura</button></td>                  
+                  </tr>
+                  <tr>
+                    <th>1</th>
+                    <td>Nombre chofer
+                    </td>
+                    <th>1</th>
+                    <th>1</th>
+  
+                    <td><button class="button open-route" >Ver ruta</button></td>
+                    <td><button class="button open-invoice">Obtener factura</button></td>                  
+                  </tr>
+                  <tr>
+                    <th>1</th>
+                    <td>Nombre chofer
+                    </td>
+                    <th>1</th>
+                    <th>1</th>
+  
+                    <td><button class="button open-route" >Ver ruta</button></td>
+                    <td><button class="button open-invoice">Obtener factura</button></td>                  
+                  </tr>
+                  <tr>
+                    <th>1</th>
+                    <td>Nombre chofer
+                    </td>
+                    <th>1</th>
+                    <th>1</th>
+  
+                    <td><button class="button open-route" >Ver ruta</button></td>
+                    <td><button class="button open-invoice">Obtener factura</button></td>                  
+                  </tr>
+                  <tr>
+                    <th>1</th>
+                    <td>Nombre chofer
+                    </td>
+                    <th>1</th>
+                    <th>1</th>
+  
+                    <td><button class="button open-route" >Ver ruta</button></td>
+                    <td><button class="button open-invoice">Obtener factura</button></td>                  
+                  </tr>
+                  
                 </tbody>
         </table>
       </div>
 
-     
+      <script src="../scripts/travels.js"></script>
+ 
 </body>
 </html>

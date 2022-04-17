@@ -25,7 +25,7 @@
           <img src="../images/logo.svg">
         </div>
         <div class="tile is-child">
-          <form>
+          <form id = "form-login">
             <div class="field">
                 <p class="control has-icons-left has-icons-right">
                   <input class="input" type="email" placeholder="Correo electrónico">
@@ -47,19 +47,19 @@
               </div>
               <div class="field">
                 <p class="control">
-                  <button class="button is-success" style="width: 100%; background-color: #023E8A;">
+                  <button id = "login" class="button is-success" style="width: 100%; background-color: #023E8A;">
                     Iniciar sesión
                   </button>
                 </p>
               </div>
         </form>        
-      
+
       </div>
       <div class="tile container is-child" ">
-       <h5 style = "text-align: center;">¿No tienes cuenta? <span><strong>Registrate</strong> </span></h5>
+       <h5 style = "text-align: center;">¿No tienes cuenta? <span class = "conectors" onclick="location.href = '../ui/register.html'"><strong>Registrate</strong> </span></h5>
 
       </div>  
-    </div>
+    </div >
    
 
 
@@ -70,5 +70,6 @@
 
 </div>
 </div>
+<script src = "../scripts/login.js"></script>
 </body>
 </html>

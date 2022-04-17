@@ -1,7 +1,7 @@
 
 .options-menu{
     width:100vw;
-    height: 100vh;
+    height: 100%;
 }
 body{
     width:100vw;
@@ -10,9 +10,16 @@ body{
 .options-menu > div.level-item{
     height: 100%;
 }
+#options{
+    height: auto;
+    background-color: #03045E;
+
+}
 .options-menu > div.level-item:first-child{
+
     background-color: #03045E;
     width: 15%; 
+    height: 100%;
     position: relative;
     
 }
@@ -23,7 +30,7 @@ body{
 
 .options-menu > div.level-item > aside.menu{
 position: absolute;
-top: 20px;
+top: 25px;
 width: 100%;
 
 }
@@ -34,28 +41,39 @@ width: 100%;
     color: #ffffff;
 }
 
-
-.options-menu > div.level-item > aside.menu > ul > li:hover{
- background-color: #ffffff;
-}
-.options-menu > div.level-item > aside.menu > ul > li:hover > a{
-    color: #03045E;
-
+.options-menu > div.level-item > aside.menu > ul  > li > a:hover{
+background-color: #023E8A;
 }
 
-.options-menu > div.level-item > aside.menu > ul > li{
-    padding: 10px 10px 10px 45px;
-}
+
 .options-menu > div.level-item > aside.menu > p{
-    padding: 0 0 0 20px;
+    padding: 0 0 0 15px;
 }
 ::-webkit-scrollbar {
     display: none;
     }
 
+    .options-menu > div.level-item > aside.menu > ul > li > a{ 
+        width: 100%;
+display: block;
+        padding: 10px 0 10px 40px;
+        border: 1px solid transparent;
 
+        
+
+    }
 
 .page-selected , .page-selected > iframe {
     width: 100%; 
     height:100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.selected{
+background-color: #0077B6;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 }
