@@ -2,7 +2,7 @@
 var regions = new Map();
 regions.set("Tegucigalpa",[-87.20191132492509,14.084703437518472]);
 regions.set("Comayagua",[-87.63976730904113,14.44775885131186]);
-regions.set("La Ceiba",[-87.63976730904113,14.44775885131186]);
+regions.set("La Ceiba",[-86.78795,15.77990]);
 
 
 

@@ -5,7 +5,7 @@ const isDev = !app.isPackaged;
 
 const createWindow = () => {
   const win = new BrowserWindow({
-     height: 720, width: 1280
+     height: 720, width: 1280, title: 'Ayumi', icon: './images/Ayumi.ico'
   })
   win.removeMenu(); 
   win.loadFile(path.join(__dirname,'./ui/login.html'))

@@ -16,7 +16,7 @@ body{
 
 }
 .options-menu > div.level-item:first-child{
-
+    overflow:scroll;
     background-color: #03045E;
     width: 15%; 
     height: 100%;
@@ -25,7 +25,8 @@ body{
 }
 .options-menu > div.level-item:last-child{
     width:85%;
-    
+    overflow:scroll;
+
 }
 
 .options-menu > div.level-item > aside.menu{
@@ -68,12 +69,13 @@ display: block;
     height:100%;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
+
 
 .selected{
 background-color: #0077B6;
 box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
+}
+body{
+    overflow: hidden;
 }

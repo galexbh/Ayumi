@@ -14,3 +14,8 @@ body{
 .mapboxgl-ctrl-directions{
     height: 100%;
 }
+
+.section{
+    text-align: center;
+    padding: 5px !important;
+}

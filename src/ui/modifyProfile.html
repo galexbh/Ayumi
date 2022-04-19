@@ -31,79 +31,16 @@
        
                 <div   class = "form-items">
                   <div class="field">
-                    <label class="label">Primer nombre:</label>
-                    <div class="control">
-                      <input class="input" type="text" placeholder="Primer nombre">
-                    </div>
-                  </div>
-                  <div class="field">
-                    <label class="label">Segundo nombre:</label>
-                    <div class="control">
-                      <input class="input" type="text" placeholder="Segundo nombre">
-                    </div>
-                  </div>
-                   
-                  <div class="field">
-                    <label class="label">Primer apellido:</label>
-                    <div class="control">
-                      <input class="input" type="text" placeholder="Primer apellido">
-                    </div>
-                  </div>
-
-                  <div class="field">
-                    <label class="label">Segundo apellido:</label>
-                    <div class="control">
-                      <input class="input" type="text" placeholder="Segundo apellido">
-                    </div>
-                  </div>
-                  <div class="field">
                     <label class="label">RTN:</label>
                     <div class="control">
-                      <input class="input" type="text" placeholder="Segundo apellido">
+                      <input class="input required" type="text"  pattern  = "^[0-9]{14}$" id = "rtn"   placeholder="Numero de RTN">
                     </div>
-                  </div>  
-                  <div class="field">
-                    <label class="label">Teléfono:</label>
-
-                    <p class="control has-icons-left has-icons-right">
-                      <input class="input" type="text" placeholder="Segundo nombre">
-
-                    </p>
                   </div>
-
-                </div>
-
-                <div class = "form-items "> 
                   <div class="field">
-                    <label class="label">Fecha de nacimiento:</label>
-
-                    <p class="control has-icons-left has-icons-right">
-                      <input class="input" type="text" placeholder="Formato año/mes/dia">
-
-                    </p>
-                  </div>
-
-
-                  <div class="field">
-                    <label class="label">Sexo:</label>
-                    <div class="control">
-                      <div class="select">
-                        <select>
-                          <option>Hombre</option>
-                          <option>Mujer</option>                              
-                          <option>Prefiero no especificarlo</option>
-
-                        </select>
-                      </div>
-                      </div>
-                  </div>
-
-
-                                        <div class="field">
                     <label class="label">Correo electrónico:</label>
 
                     <p class="control has-icons-left has-icons-right">
-                      <input class="input" type="email" placeholder="Correo electrónico">
+                      <input class="input required" id = "email" minlength="8" pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" type="email" placeholder="Correo electrónico">
                       <span class="icon is-small is-left">
                         <i class="fas fa-envelope"></i>
                       </span>
@@ -112,9 +49,26 @@
                       </span>
                     </p>
                   </div>
+                  <div class="field">
+                    <label class="label ">Teléfono:</label>
+
+                    <div class="control">
+                      <input class="input required"  pattern="^[0-9]{8}$" id = "phoneNumber" type="text" placeholder="Numero sin código de país">
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class = "form-items "> 
+
+
+
+          
+
+           
 
                   <div class="field">
-                    <label class="label">Contraseña:</label>
+                    <label class="label">Nueva contraseña:</label>
 
                     <p class="control has-icons-left">
                       <input class="input" type="password" placeholder="Contraseña">
@@ -125,7 +79,7 @@
                     </p>
                   </div>
                   <div class="field">
-                    <label class="label">Repita su contraseña:</label>
+                    <label class="label">Repita la nueva contraseña:</label>
 
                     <p class="control has-icons-left">
                       <input class="input" type="password" placeholder="Contraseña">
@@ -149,6 +103,6 @@
             </form>        
    
           </div> 
-    
+    <script src = "../scripts/editProfile.js"></script>
 </body>
 </html>
