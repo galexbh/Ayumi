@@ -40,17 +40,16 @@ console.log(userDates);
 
 axios({
         method: 'POST',
-        url: 'http://localhost:3000/user/register/v1',
+        url: 'https://ayumi-api.herokuapp.com/user/register/v1',
         data: userDates
      }).then(response =>  {
        
-        //sessionStorage.setItem("userData" ,JSON.stringify(response.data[0]));
+  
         location.href='../ui/login.html';
         
   
      }).catch(() => {
-        //document.querySelector("div.notification").classList.remove("alert");
-        //setTimeout(()=>{document.querySelector("div.notification").classList.add("alert"); }, 6000);
+
      });
 
         

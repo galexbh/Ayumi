@@ -1,7 +1,7 @@
 window.addEventListener("load", ()=>{
     axios({
         method: 'GET',
-        url: 'http://localhost:3000/user/v1',
+        url: 'https://ayumi-api.herokuapp.com/user/v1',
      }).then(response =>  {
 response.data.recordsets[0].forEach(user => {
     let table = document.createElement("tr");

@@ -9,7 +9,7 @@ let validationCredentials = {"Email": document.getElementById("Email").value, "P
  
 axios({
       method: 'POST',
-      url: 'http://localhost:3000/user/login/v1',
+      url: 'https://ayumi-api.herokuapp.com/login/v1',
       data: validationCredentials
    }).then(response =>  {
       sessionStorage.setItem("userData" ,JSON.stringify(response.data[0]));
