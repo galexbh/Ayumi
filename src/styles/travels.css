@@ -14,3 +14,7 @@ height: 90%;
 
     }
     .modal{text-align: center;}
+
+    tbody th{
+        font-weight: normal;
+    }

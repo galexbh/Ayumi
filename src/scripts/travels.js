@@ -9,13 +9,13 @@ button.classList.add("button");
       field.textContent = "1";
       break;
     case "driverName":
-      field.textContent = "Andy";
+      field.textContent = "Andy Avelar";
       break;
     case "date":
-      field.textContent = "222:22";
+      field.textContent = "1";
       break;
     case "price":
-      field.textContent = 132;
+      field.textContent = 1;
       break;
       case "route":
           button.textContent = "Ver ruta";
