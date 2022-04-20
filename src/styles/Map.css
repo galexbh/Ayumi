@@ -1,0 +1,46 @@
+.mapbox-directions-clearfix{
+   display: none;
+}
+
+body { 
+    margin: 0; 
+    padding: 0; 
+}
+#map { 
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; 
+    top: 0; 
+    bottom: 0;  
+    width: 80%;
+    height: 50vh;
+    border-radius: 1rem; 
+}
+::-webkit-scrollbar {
+    display: none;
+    }
+
+.regions{
+    text-align:center;
+    padding: 20px;
+}
+#use-route{
+height: 25%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#use-route > button{
+    background-color: #023E8A;
+    width: 30%;
+    color: #ffffff;
+}
+
+#use-route > button:hover{
+
+background-color: #ffffff;
+color: #000000;
+
+
+}

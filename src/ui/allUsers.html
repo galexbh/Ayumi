@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3e54782578.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="icon" src = "../images/Ayumi.ico">
+
+    <title>Ayumi</title>
+<style>
+    #content th{
+        font-weight: normal;
+    }
+</style>
+</head>
+<body>
+    
+    <section class="section" style="text-align:center;">
+        <h1 class="title">Lista de usuarios</h1>
+
+      </section>
+
+    <div class="table-container">
+        <table class="table is-fullwidth">
+            <thead>
+                <tr>
+                  <th id = "id">Identificador</th>
+                  <th id ="rolName">Rol</th>
+                  <th id = "phone">Telefono</th>
+                  <th id = "Email">Correo electrónico</th>
+
+                  <th id = "FirsName">Primer nombre</thid>
+
+                  <th id = "MiddleName">Segundo nombre</th>
+                  <th id = "LastNamePaternal">Primer apellido</th>
+                  <th id = "LastNameMaternal">Segundo apellido</th>
+                  <th id = "age">Edad</th>
+                  <th id = "Sex">Sexo</th>
+                  <th id = "RTN">RTN</th>
+                  <th id = "date">Fecha de nacimiento</th>
+                  <th id = "dateUser">Fecha de creación de usuario</th>
+
+
+
+
+
+                </tr>
+              </thead>
+
+              <tbody id = "content">
+                
+              
+                </tbody>
+        </table>
+      </div>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script src = "../scripts/allUser.js    "></script>
+</body>
+</html>

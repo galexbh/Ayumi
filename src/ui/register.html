@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3e54782578.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="../styles/register.css">
+    <link rel="icon" src = "../images/Ayumi.ico">
+
+    <title>Ayumi</title>
+</head>
+<body >
+  <div class="notification is-danger box alert float-notification" >
+    <button class="delete"></button>
+<p>Los siguientes campos no pueden estar vacíos</p>   </div>
+    <div class="register-container">   
+        <div class="level box register-components">
+          <div class="level-item" >
+              <div class="tile is-vertical is-parent" >
+                <div class="tile  is-child">
+                  <h4 class="title is-4" style = "text-align: center;"><strong>Crear una cuenta</strong </h4 >
+           
+                 </div>         
+                <div class="tile is-child">
+                  <form id = "form-register" autocomplete="off">
+                    <div class="tile is-parent">
+
+           
+                    <div   class = "form-items">
+                      <div class="field">
+                        <label class="label">Primer nombre:</label>
+                        <div class="control">
+                          <input class="input required"minlength = "2" pattern="^[A-ZÄËÏÖÜÁÉÍÓÚÂÊÎÔÛÀÈÌÒÙ][a-zäÄëËïÏöÖüÜáéíóúáéíóúÁÉÍÓÚÂÊÎÔÛâêîôûàèìòùÀÈÌÒÙ]+" id = "firstName" type="text" placeholder="Primer nombre">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label class="label">Segundo nombre:</label>
+                        <div class="control">
+                          <input class="input" minlength = "2" pattern="^[A-ZÄËÏÖÜÁÉÍÓÚÂÊÎÔÛÀÈÌÒÙ][a-zäÄëËïÏöÖüÜáéíóúáéíóúÁÉÍÓÚÂÊÎÔÛâêîôûàèìòùÀÈÌÒÙ]+" id = "middleName" type="text" placeholder="Segundo nombre">
+                        </div>
+                      </div>
+                       
+                      <div class="field">
+                        <label class="label">Primer apellido:</label>
+                        <div class="control">
+                          <input class="input required" minlength = "2"  pattern="^[A-ZÄËÏÖÜÁÉÍÓÚÂÊÎÔÛÀÈÌÒÙ][a-zäÄëËïÏöÖüÜáéíóúáéíóúÁÉÍÓÚÂÊÎÔÛâêîôûàèìòùÀÈÌÒÙ]+" type="text" id ="LastNamePaternal" placeholder="Primer apellido">
+                        </div>
+                      </div>
+
+                      <div class="field">
+                        <label class="label">Segundo apellido:</label>
+                        <div class="control">
+                          <input class="input" minlength = "2" pattern="^[A-ZÄËÏÖÜÁÉÍÓÚÂÊÎÔÛÀÈÌÒÙ][a-zäÄëËïÏöÖüÜáéíóúáéíóúÁÉÍÓÚÂÊÎÔÛâêîôûàèìòùÀÈÌÒÙ]+" type="text" id = "lastNameMaternal" placeholder="Segundo apellido">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label class="label">RTN:</label>
+                        <div class="control">
+                          <input class="input required" type="text"  pattern  = "^[0-9]{14}$" id = "rtn"   placeholder="Numero de RTN">
+                        </div>
+                      </div>
+                        <div class="field">
+                          <label class="label ">Teléfono:</label>
+  
+                          <div class="control">
+                            <input class="input required"  pattern="^[0-9]{8}$" id = "phoneNumber" type="text" placeholder="Numero sin código de país">
+  
+                          </div>
+                        </div>
+                       </div>  
+
+
+
+                    <div class = "form-items "> 
+                      <div class="field">
+                        <label class="label" >Fecha de nacimiento:</label>
+
+                        <div class="control ">
+                          <input class="input required"  id = "date" type ="date">
+
+                        </div>
+                      </div>
+
+
+                      <div class="field">
+                        <label class="label">Sexo:</label>
+                        <div class="control">
+                          <div class="select">
+                            <select id = "sex" class ="">
+                              <option>Seleccione una opción</option>
+
+                              <option>Hombre</option>
+                              <option>Mujer</option>                              
+                              <option>Prefiero no especificarlo</option>
+
+                            </select>
+                          </div>
+                          </div>
+                      </div>
+
+
+                                            <div class="field">
+                        <label class="label">Correo electrónico:</label>
+
+                        <p class="control has-icons-left has-icons-right">
+                          <input class="input required" id = "email" minlength="8" pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" type="email" placeholder="Correo electrónico">
+                          <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                          </span>
+                          <span class="icon is-small is-right">
+                            <i class="fas fa-check"></i>
+                          </span>
+                        </p>
+                      </div>
+
+                      <div class="field">
+                        <label class="label">Contraseña:</label>
+
+                        <p class="control has-icons-left">
+                          <input class="input required" type="password" minlength="8" id = "password" placeholder="Contraseña">
+                          <span class="icon is-small is-left">
+                            <i class="fas fa-lock"></i>
+                          </span>
+                          
+                        </p>
+                      </div>
+                      <div class="field">
+                        <label class="label">Repita su contraseña:</label>
+
+                        <p class="control has-icons-left">
+                          <input class="input required" minlength="8" type="password" id = "passwordRepeat"placeholder="Repita su contraseña">
+                          <span class="icon is-small is-left">
+                            <i class="fas fa-lock"></i>
+                          </span>
+
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="field">
+                    <p class="control" style="text-align:center;">    
+                      <button class="button is-success" id = "register-user" style="width: 40%;padding: auto; background-color: #023E8A;">
+                        Crear cuenta
+                      </button>
+                    </p>
+                  </div>
+                </form>        
+       
+              </div> 
+              <div class="tile container is-child">
+                <h5 style = "text-align: center;">¿Ya tienes una cuenta? <span class = "conectors" onclick="location.href = '../ui/login.html'"><strong>Inicia sesión</strong> </span></h5>
+         
+               </div> 
+            </div>
+           
+
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+        <script src = "../scripts/register.js"></script>
+</body>
+</html>

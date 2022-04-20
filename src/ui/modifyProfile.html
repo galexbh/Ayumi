@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">  
+    <script src="https://kit.fontawesome.com/3e54782578.js" crossorigin="anonymous"></script>
+    <link rel="icon" src = "../images/Ayumi.ico">
+
+
+    <title>Ayumi</title>
+
+<style>
+      .form-items{
+    width: 100%;
+    margin: 0 15px 30px 15px;
+
+  }
+</style>
+</head>
+<body>
+    <section class="section" style="text-align:center;">
+        <h1 class="title">Modificar perfil</h1>
+        </section>
+        <div class="tile is-vertical is-parent" >
+       
+            <div class="tile is-child">
+              <form>
+                <div class="tile is-parent">
+
+       
+                <div   class = "form-items">
+                  <div class="field">
+                    <label class="label">RTN:</label>
+                    <div class="control">
+                      <input class="input required" type="text"  pattern  = "^[0-9]{14}$" id = "rtn"   placeholder="Numero de RTN">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Correo electrónico:</label>
+
+                    <p class="control has-icons-left has-icons-right">
+                      <input class="input required" id = "email" minlength="8" pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" type="email" placeholder="Correo electrónico">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                      <span class="icon is-small is-right">
+                        <i class="fas fa-check"></i>
+                      </span>
+                    </p>
+                  </div>
+                  <div class="field">
+                    <label class="label ">Teléfono:</label>
+
+                    <div class="control">
+                      <input class="input required"  pattern="^[0-9]{8}$" id = "phoneNumber" type="text" placeholder="Numero sin código de país">
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class = "form-items "> 
+
+
+
+          
+
+           
+
+                  <div class="field">
+                    <label class="label">Nueva contraseña:</label>
+
+                    <p class="control has-icons-left">
+                      <input class="input" type="password" placeholder="Contraseña">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                      </span>
+                      
+                    </p>
+                  </div>
+                  <div class="field">
+                    <label class="label">Repita la nueva contraseña:</label>
+
+                    <p class="control has-icons-left">
+                      <input class="input" type="password" placeholder="Contraseña">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                      </span>
+
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="field">
+                <p class="control" style="text-align:center;">    
+                  <button class="button is-success" style="width: 40%;padding: auto; background-color: #023E8A;">
+                   Modificar perfil
+                  </button>
+                </p>
+              </div>
+            </form>        
+   
+          </div> 
+    <script src = "../scripts/editProfile.js"></script>
+</body>
+</html>

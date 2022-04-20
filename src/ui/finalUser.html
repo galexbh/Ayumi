@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3e54782578.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="../styles/principalView.css">
+
+    <link rel="icon" src = "../images/Ayumi.ico">
+
+    <title>Ayumi</title>
+</head>
+<body>
+  
+    <div class="level options-menu" >
+      <div class="level-item" >
+        <aside id = "options" class="menu">
+          <p class="menu-label">
+            USUARIO
+          </p>
+          <ul>
+            <li><a>Modificar perfil</a></li>
+            <li><a id ="logout">Cerrar sesión</a></li>
+          </ul>
+          <p class="menu-label">
+            SERVICIO
+          </p>
+          <ul>
+            <li><a id = "service">Solicitar servicio</a></li>
+            <li><a  id ="travels">Viajes</a></li>
+          </ul>
+          <p class="menu-label">
+            conductor
+          </p>
+          <ul>
+            <li><a>Viaje actual</a></li>
+            <li><a>Viajes completados</a></li>
+          </ul>
+          <p class="menu-label">
+            Administración
+          </p>
+          <ul >
+            <li><a>Ver usuarios</a></li>
+            <li>
+              <a >Ver empleados</a>
+            </li>
+            <li><a>Registrar empleado</a></li>
+            <li><a>Registrar vehículo</a></li>
+            <li><a>Registrar sucursal</a></li>
+            <li><a>Registrar almacen</a></li>
+
+
+          </ul>
+          <p class="menu-label">
+            Contabilidad
+          </p>
+          <ul>
+            <li><a>Ver facturas</a></li>
+            <li><a>Re imprimir facturas</a></li>
+          </ul>
+          <p class="menu-label">
+            Empleado
+          </p>
+          <ul >
+            <li><a>Registro de ticket diario</a></li>
+            </ul>
+  
+        </aside>
+      </div>
+
+      <div class="level-item">
+        <div class="page-selected" >
+          <iframe id = "principal-container" ></iframe>
+        </div>
+      </div>  
+    </div> 
+    <script src="../scripts/getService.js"></script>
+   
+</body>
+</html>

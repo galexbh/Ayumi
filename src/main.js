@@ -1,25 +1,25 @@
 const { app, BrowserWindow } = require('electron');
-const { join } = require('path');
+const path = require('path')
 
 const isDev = !app.isPackaged;
-app.whenReady().then(main);
 
-function main() {
-  const window = new BrowserWindow({
-    with: 800,
-    height: 600,
-    autoHideMenuBar: true,
-    webPreferences: {
-      nodeIntegration: true
-    },
-  });
-
-  window.loadFile(join(__dirname, './ui/index.html'));
-  window.on('ready-to-show', window.show);
-
-  if (isDev) window.webContents.openDevTools();
+const createWindow = () => {
+  const win = new BrowserWindow({
+     height: 720, width: 1280, title: 'Ayumi', icon: './images/Ayumi.ico'
+  })
+  win.removeMenu(); 
+  win.loadFile(path.join(__dirname,'./ui/login.html'))
+  if (isDev) win.webContents.openDevTools();
 }
 
-module.exports = {
-    main
-}
+app.whenReady().then(() => {
+  createWindow()
+})
+
+app.on('activate', () => {
+  if (BrowserWindow.getAllWindows().length === 0) createWindow()
+})
+
+app.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') app.quit()
+})
